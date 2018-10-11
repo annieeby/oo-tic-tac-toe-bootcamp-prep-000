@@ -33,16 +33,16 @@ def move(index, character)
   @board[index]=character
 end
 
-def position_taken?(board, index)
-  if board[index] == "X" || board[index] == "O"
+def position_taken?(index)
+  if @board[index] == "X" || @board[index] == "O"
     true
-  elsif board[index] == " " || board[index] == "" || board[index] == nil
+  elsif @board[index] == " " || @board[index] == "" || @board[index] == nil
     false 
   end
 end
 
-def valid_move?(board, index)
-  if !position_taken?(board, index) && index.between?(0,8)
+def valid_move?(index)
+  if !position_taken?(index) && index.between?(0,8)
     true
   else
     false
