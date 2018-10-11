@@ -128,4 +128,5 @@ def play(board)
   while !over?(board)
   turn(board)
   play(board)
+  end
 end
