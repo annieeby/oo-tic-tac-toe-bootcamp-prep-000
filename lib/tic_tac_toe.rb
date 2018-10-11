@@ -97,11 +97,11 @@ end
 end
 
 def full?  
-board.none?{|i| i == " "}
+@board.none?{|i| i == " "}
 end
 
-def draw?(board)
-  full?(board) && !won?(board)
+def draw?
+  full? && !won?
 end
 
 def over?(board)
