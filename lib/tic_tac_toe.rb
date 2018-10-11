@@ -96,7 +96,7 @@ won
 end
 end
 
-def full?(board)  
+def full?  
 board.none?{|i| i == " "}
 end
 
