@@ -110,9 +110,9 @@ def over?
   end
 end
 
-def winner(board)
- if won?(board)
-   winner = won?(board)[0]
+def winner
+ if won?
+   winner = won?[0]
    board[winner]
  end
 end
