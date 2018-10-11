@@ -129,4 +129,3 @@ def play(board)
   turn(board)
   play(board)
 end
-end
