@@ -117,17 +117,17 @@ def winner
  end
 end
 
-def play(board)
-  if winner(board) == "X"
+def play
+  if winner == "X"
     puts "Congratulations X!"
-  elsif winner(board) == "O"
+  elsif winner == "O"
     puts "Congratulations O!"
-  elsif draw?(board)
+  elsif draw?
     puts "Cat's Game!"
   end
-  while !over?(board)
-  turn(board)
-  play(board)
+  while !over?
+  turn
+  play
   end
 end
 end
