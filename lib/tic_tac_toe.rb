@@ -62,9 +62,9 @@ def turn
   end
 end
 
-def turn_count(board)
+def turn_count
   counter = 0
-  board.each do |board_position|
+  @board.each do |board_position|
     if board_position == "X" || board_position == "O"
       counter += 1
     end
@@ -72,9 +72,9 @@ def turn_count(board)
   return counter
 end
 
-def current_player(board)
-  turn_count(board)
-  turn_count(board) % 2 == 0 ? "X" : "O"
+def current_player
+  turn_count
+  turn_count % 2 == 0 ? "X" : "O"
 end
 
 def won?(board)
